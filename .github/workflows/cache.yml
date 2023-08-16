@@ -8,5 +8,11 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - name: Homepage
-        run: curl "projectcreatedc.org"
+      - name: Cache Homepage
+        run: curl "https://projectcreatedc.org"
+      - name: Cache News Page
+        run: curl "https://projectcreatedc.org/news-events/news/"
+      - name: Cache Staff Page
+        run: curl "https://projectcreatedc.org/about-us/our-people/our-staff/"
+      - name: Cache Teachers Page
+        run: curl "https://projectcreatedc.org/about-us/our-people/teachers-therapists/"
