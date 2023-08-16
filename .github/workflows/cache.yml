@@ -2,6 +2,7 @@ name: "Cache projectcreatedc.org"
 on:
   schedule:
   - cron: "*/2 * * * *"
+  workflow_dispatch:
 
 jobs:
   cron:
