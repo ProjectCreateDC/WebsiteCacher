@@ -1,7 +1,7 @@
 name: "Cache projectcreatedc.org"
 on:
   schedule:
-  - cron: "0 15 12 * * ? *"
+  - cron: "0 0/3 0 ? * * *"
 
 jobs:
   cron:
