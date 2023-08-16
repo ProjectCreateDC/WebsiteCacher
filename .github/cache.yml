@@ -1,0 +1,11 @@
+name: "Cache projectcreatedc.org"
+on:
+  schedule:
+  - cron: "0 15 12 * * ? *"
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Homepage
+        run: curl "projectcreatedc.org"
