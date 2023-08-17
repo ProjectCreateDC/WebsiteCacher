@@ -1,7 +1,7 @@
 name: "Cache projectcreatedc.org"
 on:
   schedule:
-  - cron: "10 0 * * *"
+  - cron: "10 5 * * *"
   workflow_dispatch:
 
 jobs:
@@ -9,40 +9,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Cache 'Home' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org"'
       - name: Cache 'Mission, Vision & Values' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/about-us/vision-and-mission/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/about-us/vision-and-mission/"'
       - name: Cache 'Our History' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/about-us/our-history/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/about-us/our-history/"'
       - name: Cache 'Staff' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/about-us/our-people/our-staff/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/about-us/our-people/our-staff/"'
       - name: Cache 'Teaching Artists' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/about-us/our-people/teachers-therapists/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/about-us/our-people/teachers-therapists/"'
       - name: Cache 'Board of Directors' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/about-us/our-people/board-of-directors/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/about-us/our-people/board-of-directors/"'
       - name: Cache 'Supporters' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/about-us/supporters/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/about-us/supporters/"'
       - name: Cache 'Studio Classes' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/our-programs/studio-programs/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/our-programs/studio-programs/"'
       - name: Cache 'Join Us' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/join-us/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/join-us/"'
       - name: Cache 'Family Art Day' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/our-programs/family-art-day/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/our-programs/family-art-day/"'
       - name: Cache 'Workshops' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/our-programs/workshops/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/our-programs/workshops/"'
       - name: Cache News Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/news-events/news/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/news-events/news/"'
       - name: Cache 'Shop' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/shop/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/shop/"'
       - name: Cache 'Contact Us' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/contact-us/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/contact-us/"'
       - name: Cache 'Donate' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/donate/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/donate/"'
       - name: Cache 'Partnership Programs' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/our-programs/partnership-programs/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/our-programs/partnership-programs/"'
       - name: Cache 'Art Therapy' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/our-programs/art-therapy/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/our-programs/art-therapy/"'
       - name: Cache 'Professional Development' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/our-programs/professional-development/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/our-programs/professional-development/"'
       - name: Cache 'Privacy Policy' Page
-        run: curl --connect-timeout 30 "https://projectcreatedc.org/privacy-policy/"
+        run: 'curl --connect-timeout 60 -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" "https://projectcreatedc.org/privacy-policy/"'
