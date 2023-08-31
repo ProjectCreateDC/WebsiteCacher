@@ -1,11 +1,9 @@
 name: "Cache projectcreatedc.org"
 on:
-  schedule:
-  - cron: "45 */1 * * *"
   workflow_dispatch:
 
 jobs:
-  cron:
+  cache-website:
     runs-on: ubuntu-latest
     steps:
       - name: Cache 'Home' Page
